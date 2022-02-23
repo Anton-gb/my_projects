@@ -4,7 +4,7 @@ import sys
 if len(sys.argv) > 1:
     root_dir = sys.argv[1]
 else:
-    root_dir = r'C:\Users\User\Downloads'
+    root_dir = r''
 
 os.chdir(root_dir)
 print(os.getcwd())
@@ -16,7 +16,7 @@ dict_dir = {
     'ppt': ['ppt', 'pptx'],
     'mp': ['mp4'],
     'png, jpeg': ['png', 'jpeg', 'jpg'],
-    'rvt, dwg': ['dwg', 'rvt', 'rte', 'rfa', 'bak'],
+    'rvt, dwg': ['dwg', 'rvt', 'rte', 'rfa', 'bak', 'dyn'],
     'exe': ['exe'],
     'zip': ['zip']
 }

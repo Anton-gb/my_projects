@@ -2,7 +2,7 @@ from docx2pdf import convert
 import os
 
 # a = os.getcwd()
-# os.chdir(r'C:\IT\Linux')
+# os.chdir(r'')
 #
 # # convert('2_les.docx', a)
 

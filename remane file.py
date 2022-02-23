@@ -1,6 +1,6 @@
 import os
 
-dir_name = r'C:\Users\aoioh\Мой диск\Учеба\7 сем\Теплоснабжение\КП'
+dir_name = r''
 
 os.chdir(dir_name)
 
