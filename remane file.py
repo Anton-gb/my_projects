@@ -4,7 +4,7 @@ dir_name = r'C:\Users\aoioh\Мой диск\Учеба\7 сем\Теплосна
 
 os.chdir(dir_name)
 
-start_name = 'Тимошков А.Д._'
+start_name = ''
 
 for file in os.listdir():
     file_extension = file.split('.')[-1]
