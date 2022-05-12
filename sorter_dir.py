@@ -1,10 +1,11 @@
 import os
 import sys
+from pathlib import Path
 
 if len(sys.argv) > 1:
     root_dir = sys.argv[1]
 else:
-    root_dir = r''
+    root_dir = r'C:\Users\User\Downloads\Telegram Desktop'
 
 os.chdir(root_dir)
 print(os.getcwd())
@@ -17,7 +18,7 @@ dict_dir = {
     'mp': ['mp4'],
     'png, jpeg': ['png', 'jpeg', 'jpg'],
     'rvt, dwg': ['dwg', 'rvt', 'rte', 'rfa', 'bak', 'dyn'],
-    'exe': ['exe'],
+    'exe, msi': ['exe', 'msi'],
     'zip': ['zip']
 }
 
@@ -33,3 +34,9 @@ for file in os.listdir(root_dir):
             if a in val:
                 os.replace(file, fr".\{key}\{file}")
                 print(fr"{file} был перемещен в .\{key}")
+
+for file in os.listdir(root_dir):
+    if os.path.isdir(file):
+        if not any(Path(fr".\{file}").iterdir()):
+            os.rmdir(file)
+            print(f"{file} - пустые папки")
