@@ -5,7 +5,7 @@ from pathlib import Path
 if len(sys.argv) > 1:
     root_dir = sys.argv[1]
 else:
-    root_dir = r'C:\Users\User\Downloads\Telegram Desktop'
+    root_dir = r'C:\Users\User\Downloads'
 
 os.chdir(root_dir)
 print(os.getcwd())
@@ -39,4 +39,4 @@ for file in os.listdir(root_dir):
     if os.path.isdir(file):
         if not any(Path(fr".\{file}").iterdir()):
             os.rmdir(file)
-            print(f"{file} - пустые папки")
+            print(f"{file} - пустая папка")
