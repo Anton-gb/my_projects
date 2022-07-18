@@ -5,7 +5,7 @@ from pathlib import Path
 if len(sys.argv) > 1:
     root_dir = sys.argv[1]
 else:
-    root_dir = r'C:\Users\User\Downloads'
+    root_dir = r'C:\Users\aoioh\Downloads'
 
 os.chdir(root_dir)
 print(os.getcwd())
