@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 with open('PR.txt', 'r', encoding='utf-8') as f:
     a = f.read()
     print('Файл прочитан!')
@@ -9,8 +9,7 @@ with open('new.txt', 'w', encoding='utf-8') as f:
     f.write(a)
     print('Файл записан!')
 
-=======
->>>>>>> Stashed changes
+
 # for i in range(1080, 1080*3, 1080):
 #     print(i)
 
