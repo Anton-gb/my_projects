@@ -1,11 +1,17 @@
 import os
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
 
 if len(sys.argv) > 1:
     root_dir = sys.argv[1]
 else:
-    root_dir = r'C:\Users\aoioh\Downloads'
+    root_dir = rf'{os.getenv("path_to_telegram")}'
 
 os.chdir(root_dir)
 print(os.getcwd())

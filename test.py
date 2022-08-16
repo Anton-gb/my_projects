@@ -15,8 +15,7 @@ with open('new.txt', 'w', encoding='utf-8') as f:
 
 # for i in range(1, 4):
 #     print(i)
-<<<<<<< Updated upstream
-=======
+
 
 import json
 
@@ -50,4 +49,3 @@ print(link)
 #
 # with open('test.json', 'w', encoding='utf-8') as file:
 #     json.dump(link, file, indent=4, ensure_ascii=False)
->>>>>>> Stashed changes
